@@ -21,7 +21,7 @@ export const pupusaSamples = [
     {
         id: '3',
         name: 'Beans Pupusa',
-        price: 5,
+        price: 4,
         favorite: false,
         stars: 4.5,
         imageUrl: 'beans.png',
