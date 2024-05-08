@@ -1,0 +1,73 @@
+@import "../../constants/variables.scss";
+
+@import "../../constants/variables.scss";
+
+.header {
+  background-color: $primary-color;
+  padding: 0;
+  border-bottom: 5px solid $accent-color;
+
+  a {
+    color: $text-onDark-color;
+  }
+
+  a:hover {
+    color: $accent-color;
+    cursor: pointer;
+  }
+
+  .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      font-weight: bold;
+      padding: 1rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+
+    a {
+      padding: 1rem;
+      display: inline-block;
+    }
+
+    .menu_container {
+      position: relative;
+
+      &:hover .menu {
+        display: block;
+      }
+
+      .menu {
+        position: absolute;
+        z-index: 1;
+        background-color: whitesmoke;
+        display: none;
+
+        a {
+          color: $text-onLight-color;
+          width: 100%;
+          min-width: 8rem;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    .cart_count {
+      background-color: $danger-color;
+      padding: 0.1rem 0.45rem;
+      border-radius: 100rem;
+      font-size: 0.9rem;
+      margin-left: 0.2rem;
+    }
+  }
+}
