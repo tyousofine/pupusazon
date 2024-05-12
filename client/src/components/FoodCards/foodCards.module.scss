@@ -1,0 +1,62 @@
+@import "../../constants/variables.scss";
+@import "../../constants/variables.scss";
+
+.menuItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 1200px;
+  gap: 1rem;
+  margin: 3rem auto;
+
+  li {
+    a {
+      background-color: $background-color;
+      height: 21rem;
+      width: 20rem;
+      // border: 1px solid $accent-color;
+      box-shadow: 0px 0px 5px 1px $accent-color;
+      border-radius: 0.5rem;
+      margin: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      color: $text-onLight-color;
+
+      .image {
+        width: 20rem;
+        height: 15rem;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .container_itemInfo {
+    margin-top: 0.3rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 5rem;
+
+    .name {
+    }
+    .price {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+    }
+
+    .item {
+    }
+
+    .favorite {
+      font-size: 1.2rem;
+      color: grey;
+
+      &.isFav {
+        color: $danger-color;
+      }
+    }
+  }
+}
