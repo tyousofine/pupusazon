@@ -8,6 +8,7 @@ export default function AppRoutes() {
     return (
         <Routes>
             <Route path='/' element={<HomePage />} />
+            <Route path="/search/:searchInput" element={<HomePage />} />
         </Routes>
     )
 }

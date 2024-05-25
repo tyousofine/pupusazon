@@ -1,4 +1,4 @@
-export const pupusaSamples = [
+export const menu = [
     {
         id: '1',
         name: 'Pork Pupusa',

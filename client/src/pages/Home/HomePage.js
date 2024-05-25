@@ -1,6 +1,9 @@
 import React, { useEffect, useReducer } from 'react'
-import { getAll } from '../../services/foodService'
+import { getAll, search } from '../../services/foodService'
 import FoodCards from '../../components/FoodCards/FoodCards'
+import { useParams } from 'react-router-dom'
+
+import Search from '../../components/Search/Search'
 
 
 const initialState = { foods: [] }
@@ -14,17 +17,23 @@ const reducer = (state, action) => {
 
 
 export default function HomePage() {
-
     const [state, dispatch] = useReducer(reducer, initialState);
     const { foods } = state;
+    const { searchInput } = useParams()
+    console.log({ searchInput })
 
     useEffect(() => {
-        getAll().then(foods => dispatch({ type: 'FOODS_LOADED', payload: foods }))
-    }, [])
+        console.log({ searchInput })
+        const loadFoods = searchInput ? search(searchInput) : getAll()
+
+        loadFoods.then(foods => dispatch({ type: 'FOODS_LOADED', payload: foods }))
+    }, [searchInput])
 
 
     return (
         <>
+            <Search />
+
             <FoodCards foods={foods} />
         </>
     )
