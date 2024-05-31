@@ -3,6 +3,7 @@ import { getAll, search } from '../../services/foodService'
 import FoodCards from '../../components/FoodCards/FoodCards'
 import { useParams } from 'react-router-dom'
 
+
 import Search from '../../components/Search/Search'
 
 
@@ -20,12 +21,13 @@ export default function HomePage() {
     const [state, dispatch] = useReducer(reducer, initialState);
     const { foods } = state;
     const { searchInput } = useParams()
-    console.log({ searchInput })
+
 
     useEffect(() => {
-        console.log({ searchInput })
-        const loadFoods = searchInput ? search(searchInput) : getAll()
 
+
+
+        const loadFoods = searchInput ? search(searchInput) : getAll()
         loadFoods.then(foods => dispatch({ type: 'FOODS_LOADED', payload: foods }))
     }, [searchInput])
 
@@ -33,7 +35,6 @@ export default function HomePage() {
     return (
         <>
             <Search />
-
             <FoodCards foods={foods} />
         </>
     )

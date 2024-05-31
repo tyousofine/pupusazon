@@ -9,4 +9,5 @@ export const search = async (input) => {
 
     return menu.filter((item) => item.name.toLowerCase().includes(input.toLowerCase()))
 
+
 }

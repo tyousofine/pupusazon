@@ -6,7 +6,7 @@ export const menu = [
         favorite: true,
         stars: 4.5,
         imageUrl: 'pork.png',
-        tags: ['Pupusa', 'Pork', 'Cheese', 'Masa']
+        tags: ['Pupusa', 'Pork', 'Cheese']
     },
 
     {
@@ -16,7 +16,7 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'porkAndBeans.png',
-        tags: ['Pupusa', 'Pork', 'Cheese', 'Beans', 'Masa', 'curtidas', 'sauce']
+        tags: ['Pupusa', 'Pork', 'Cheese', 'Beans']
     },
     {
         id: '3',
@@ -25,7 +25,7 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'beans.png',
-        tags: ['Pupusa', 'Cheese', 'Beans', 'Masa']
+        tags: ['Pupusa', 'Cheese', 'Beans', 'Vegetarian']
     },
     {
         id: '4',
@@ -34,7 +34,7 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'cheese.png',
-        tags: ['Pupusa', 'Cheese', 'herb', 'Masa']
+        tags: ['Pupusa', 'Cheese', 'Herb', 'Vegetarian']
     },
 
 
@@ -45,7 +45,7 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'salsa.png',
-        tags: ['Sauce', 'Side', 'normal', 'not spicy']
+        tags: ['Sauce', 'Side', 'Normal', 'Vegetarian']
     },
     {
         id: '6',
@@ -54,17 +54,17 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'salsaHot.png',
-        tags: ['Sauce', 'Side', 'Hot', 'Spicy']
+        tags: ['Sauce', 'Side', 'Hot', 'Spicy', 'Vegetarian']
     },
 
     {
         id: '7',
-        name: 'Curtidas',
+        name: 'Curtido',
         price: 2,
         favorite: false,
         stars: 4.5,
         imageUrl: 'CurtidoServing.png',
-        tags: ['Salad', 'Curtidas', 'Side', 'one', 'Serving', 'Curtido']
+        tags: ['Salad', 'Curtido', 'Side', 'Serving', 'Vegetarian']
     },
     {
         id: '8',
@@ -73,7 +73,7 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'CurtidoJar.png',
-        tags: ['Salad', 'Curtida', 'Side', 'jar']
+        tags: ['Salad', 'Curtido', 'Side', 'Jar', 'Vegetarian']
     },
 
     {
@@ -83,7 +83,7 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'zucchini.png',
-        tags: ['Pupusa', 'Cheese', 'herb', 'Masa', 'Zucchini']
+        tags: ['Pupusa', 'Cheese', 'Zucchini', 'Vegetarian']
     },
     {
         id: '10',
@@ -92,7 +92,7 @@ export const menu = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'custom.png',
-        tags: ['Pupusa', 'Cheese', 'custom', 'Masa', 'ingredients', 'custom', 'advance']
+        tags: ['Pupusa', 'Cheese', 'Custom']
     },
 
 

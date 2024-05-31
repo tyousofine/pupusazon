@@ -1,0 +1,22 @@
+@import "../../constants/variables.scss";
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+
+  input {
+    border-radius: 10rem;
+    border: none;
+    box-shadow: 0 0 5px 2px $accent-color;
+    outline: none;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &::placeholder {
+      color: lighten(gray, 15%);
+    }
+  }
+}
